@@ -76,16 +76,19 @@ nav a:hover {
 }
 
 .short-description {
+  margin-bottom: 20px;
   max-height: 150px; /* Altura máxima para la descripción corta */
   overflow: hidden;
 }
 
 .full-description {
+  margin-bottom: 20px;
   display: none; /* Inicialmente oculta la descripción completa */
   max-height: none; /* Elimina la altura máxima para mostrar todo el texto */
 }
 
-#show-more-btn {
+#show-more-btn,
+#submit-btn {
   background-color: #e4234d;
   color: #fff;
   border: none;
@@ -97,7 +100,8 @@ nav a:hover {
   text-transform: uppercase;
 }
 
-#show-more-btn:hover {
+#show-more-btn:hover,
+#submit-btn:hover {
   background-color: #c4183d;
 }
 
@@ -131,13 +135,9 @@ nav a:hover {
   outline-color: #e4234d;
 }
 
-.contact input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.submit-container {
+  display: flex;
+  justify-content: center;
 }
 
 /* Media Queries for Responsive Design */
