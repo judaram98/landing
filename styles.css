@@ -11,7 +11,7 @@ body {
 
 /* Navigation Bar Styles */
 nav {
-  background-color: rgb(51, 51, 51);
+  background-color: #333333;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #e4234d;
 }
 
 /* Hero Section Styles */
@@ -48,34 +48,65 @@ nav a:hover {
 /* About Section Styles */
 .about {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px 0;
-}
-
-.about div {
-  width: 50%;
-  border: 2px solid red;
+  padding: 20px;
+  text-align: center;
 }
 
 .about img {
   width: 200px;
   border-radius: 50%;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
+.about h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
 .about p {
-  max-width: 600px;
-  margin-top: 20px;
-  display: none; /* Hide paragraph initially */
+  color: #333333;
+}
+
+.short-description {
+  max-height: 150px; /* Altura máxima para la descripción corta */
+  overflow: hidden;
+}
+
+.full-description {
+  display: none; /* Inicialmente oculta la descripción completa */
+  max-height: none; /* Elimina la altura máxima para mostrar todo el texto */
+}
+
+#show-more-btn {
+  background-color: #e4234d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#show-more-btn:hover {
+  background-color: #c4183d;
 }
 
 /* Contact Section Styles */
 .contact {
   background-color: #f4f4f4;
   padding: 50px 0;
+}
+
+.contact h2 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .contact form {
@@ -92,6 +123,7 @@ nav a:hover {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  outline-color: #e4234d;
 }
 
 .contact input[type="submit"] {
@@ -105,13 +137,6 @@ nav a:hover {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-  }
-  .about h1,
-  .about p {
-    text-align: center;
-  }
   /* nav {
     flex-direction: column;
     align-items: flex-start;
