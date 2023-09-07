@@ -12,11 +12,13 @@
       <div>
         <img src="./assets/logo.png" alt="Logo" class="logo" />
       </div>
-      <div>
+      <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
+
+      <img src="./assets/icons/menu.svg" alt="menu" class="hamburger-menu" />
     </nav>
 
     <!-- Hero Section -->
@@ -30,22 +32,53 @@
       <img src="./assets/me.jpeg" alt="Your Name" />
       <div>
         <h1>About me</h1>
-        <p>
-          This is a brief paragraph about yourself. You can use JavaScript to
-          expand and collapse this section.
+        <p class="short-description">
+          I am a passionate frontend developer with a keen eye for design and a
+          love for crafting immersive digital experiences. My journey in the
+          world of web development has been marked by a deep fascination with
+          the ever-evolving technologies that power the internet. I thrive on
+          transforming creative concepts into pixel-perfect, user-friendly
+          interfaces. My expertise lies in harnessing the power of HTML, CSS,
+          and JavaScript to build responsive, dynamic, and visually stunning
+          websites.
         </p>
-        <label>Show more</label>
+        <p class="full-description">
+          I am a passionate frontend developer with a keen eye for design and a
+          love for crafting immersive digital experiences. My journey in the
+          world of web development has been marked by a deep fascination with
+          the ever-evolving technologies that power the internet. I thrive on
+          transforming creative concepts into pixel-perfect, user-friendly
+          interfaces. My expertise lies in harnessing the power of HTML, CSS,
+          and JavaScript to build responsive, dynamic, and visually stunning
+          websites.
+          <br />
+          From designing elegant layouts to optimizing performance, I am
+          dedicated to delivering seamless user interactions. With a commitment
+          to staying on the cutting edge of web development trends, I
+          continuously seek opportunities to expand my skillset. Whether it's
+          mastering the latest frontend frameworks or delving into UI/UX
+          principles, I am always eager to learn and adapt. My goal is to create
+          digital experiences that not only meet but exceed user expectations,
+          leaving a lasting impression and fostering a connection between users
+          and technology. I am excited to collaborate, innovate, and contribute
+          to the ever-evolving landscape of frontend development. Let's embark
+          on a journey to make the web a more beautiful, accessible, and
+          user-centric place, one line of code at a time.
+        </p>
+        <button id="show-more-btn">Show More</button>
       </div>
     </div>
 
     <!-- Contact Section -->
     <div class="contact" id="contact">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <form>
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" rows="4" required></textarea>
-        <input type="submit" value="Submit" />
+        <div class="submit-container">
+          <input type="submit" value="Submit" id="submit-btn" />
+        </div>
       </form>
     </div>
 
