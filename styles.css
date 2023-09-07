@@ -34,6 +34,11 @@ nav a:hover {
   color: #e4234d;
 }
 
+.hamburger-menu {
+  width: 20px;
+  display: none;
+}
+
 /* Hero Section Styles */
 .hero {
   background: radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
@@ -136,14 +141,30 @@ nav a:hover {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  /* nav {
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 89px; /* Altura de la barra de navegación */
+    left: 0;
+    right: 0;
+    background-color: #333333;
   }
 
-  nav a {
-    margin: 10px 0;
-  } */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 20px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
 }
